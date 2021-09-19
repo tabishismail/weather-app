@@ -1,6 +1,10 @@
 .myBtn{
-    background-color: aqua;
+    background-color: white;
+    padding: 11px;
+    color: black;
+    border: none;
+    /* border-radius: 50px; */
 }
-.bigBtn{
-    width: 500px;
+.myBtn:active{
+    background-color:rgb(182, 182, 182);
 }

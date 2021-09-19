@@ -1,10 +1,11 @@
 
 import './App.css';
-import { Button } from './components';
+import { SeachBar } from './components';
 
 function App() {
   return(
-    <Button myClass="myBtn bigBtn">Click Me</Button>
+    // <Button myClass="myBtn" onClick={()=>alert("Hello World")}>Click Me</Button>
+    <SeachBar/>
   )
 }
 

@@ -3,7 +3,7 @@ import "./css/index.css"
 let Button=(props)=>{
     let {children,onClick,myClass}=props;
     return(
-        <button className={myClass}>{children}</button>
+        <button onClick={onClick} className={myClass}>{children}</button>
         )
 }
 
