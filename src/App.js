@@ -4,13 +4,14 @@ import './App.css';
 import { Input, Button } from './components';
 import { useState, useEffect } from "react"
 function App() {
-  // const [data, setData] = useState("")
   const [click, setClick] = useState(true);
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState("");
 
   let lat;
   let lon;
+  let body=document.querySelector("body")
+  console.log(body)
 
   useEffect(() => {
     if (city) {
@@ -41,15 +42,16 @@ function App() {
   }, [city, lat, lon])
 
   let searchcity = () => {
-    console.log(document.getElementById("search").value)
-    setCity(document.getElementById("search").value)
-    // console.log(weather)
+    let search=document.getElementById("search")
+    // console.log(document.getElementById("search").value)
+    setCity(search.value)
+    console.log(weather)
     setClick(!click)
 
   }
   if (weather) {
     return (
-      <div>
+      <div className={weather.weather[0].description}>
         <div className="searchBar">
           <Input id="search" placeholder="Enter City Name" type="text" myClass="myInput" />
           <Button onClick={() => searchcity()} myClass="myBtn">Click Me</Button>

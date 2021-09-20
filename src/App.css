@@ -42,3 +42,16 @@
   padding: 5px;
   text-align: center;
 }
+.scattered, .broken{
+background-image: url(./assets/images/scattered.jpg);
+text-align: center;
+background-repeat: no-repeat;
+}
+li{
+  list-style: none;
+}
+.clear{
+  background-image: url(./assets/images/clear.jpg);
+  text-align: center;
+  background-repeat: no-repeat;
+  }
