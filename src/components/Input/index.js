@@ -3,9 +3,9 @@ import "./css/index.css";
 
 
 let Input=(props)=>{
-    let {type,myClass,placeholder}=props;
+    let {type,myClass,placeholder,id}=props;
     return(
-        <input type={type} placeholder={placeholder} className={myClass} />
+        <input id={id} type={type} placeholder={placeholder} className={myClass} />
     )
 }
 export default Input;
