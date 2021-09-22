@@ -10,7 +10,7 @@ function App() {
 
   let lat;
   let lon;
-  let body = document.querySelector("body")
+  // let body = document.querySelector("body")
 
 
   useEffect(() => {
@@ -19,7 +19,7 @@ function App() {
         .then(response => response.json())
         .then(json => {
           setWeather(json)
-          console.log(json)
+          // console.log(json)
         }
         ).catch((err) => {
           console.log(err)
@@ -48,7 +48,7 @@ function App() {
     let search = document.getElementById("search")
     // console.log(document.getElementById("search").value)
     setCity(search.value)
-    console.log(weather)
+    // console.log(weather)
     setClick(!click)
 
   }
