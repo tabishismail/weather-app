@@ -57,7 +57,7 @@ function App() {
       <div className={weather.weather[0].main}>
         <div className="searchBar">
           <Input id="search" placeholder="Enter City Name" type="text" myClass="myInput" />
-          <Button onClick={() => searchcity()} myClass="myBtn">Click Me</Button>
+          <Button onClick={() => searchcity()} myClass="myBtn">Search</Button>
         </div>
         <div className="weatherMain">
           <div>
